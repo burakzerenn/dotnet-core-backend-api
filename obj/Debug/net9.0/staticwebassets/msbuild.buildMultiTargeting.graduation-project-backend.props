@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/graduation-project-backend.props" />
+</Project>
