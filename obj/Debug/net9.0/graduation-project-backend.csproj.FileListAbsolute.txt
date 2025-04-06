@@ -61,3 +61,4 @@
 /Users/burakzeren/Bitirme/graduation-project-backend/obj/Debug/net9.0/graduation-project-backend.pdb
 /Users/burakzeren/Bitirme/graduation-project-backend/obj/Debug/net9.0/graduation-project-backend.genruntimeconfig.cache
 /Users/burakzeren/Bitirme/graduation-project-backend/obj/Debug/net9.0/ref/graduation-project-backend.dll
+/Users/burakzeren/Bitirme/graduation-project-backend/obj/Debug/net9.0/graduation-project-backend.sourcelink.json
