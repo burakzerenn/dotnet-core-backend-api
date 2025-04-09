@@ -1,6 +1,6 @@
-# Project Name
+# Graduation Project Backend
 
-This project is an API application developed using .NET 9 and MySQL. 
+This project is an API application developed using .NET 9 and MySQL.
 
 ## Requirements
 
@@ -21,5 +21,6 @@ The project uses a MySQL database, so you need to set up MySQL as follows:
 1. Start the MySQL server.
 2. Start the dotnet project:
 
-   ```Api 
+   ```Api
    The application accepts API requests through the URL `http://localhost:5129/scalar/v1` and returns responses.
+   ```
