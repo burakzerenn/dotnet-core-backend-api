@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:4173")
+        policy.WithOrigins("http://20.215.232.45:4173")
               .AllowAnyMethod()
               .AllowCredentials();
     });
@@ -48,5 +48,4 @@ var summaries = new[]
 app.UseCors("AllowAll");
 app.MapControllers();
 
-app.Run();
-
+app.Run("http://0.0.0.0:5000");
