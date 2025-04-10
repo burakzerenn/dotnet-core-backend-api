@@ -14,9 +14,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://20.215.232.45:4173")
-              .AllowAnyMethod()
-              .AllowCredentials();
+        policy.WithOrigins("http://20.215.232.45")
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()
+                  .AllowCredentials();
     });
 });
 
