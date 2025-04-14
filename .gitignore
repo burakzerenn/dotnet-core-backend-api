@@ -1,6 +1,6 @@
 bin/
 obj/
-.env*.local
 .env
-launchSettings.json
-appsettings*.json
+appsettings.json
+appsettings.Development.json
+Properties/launchSettings.json
