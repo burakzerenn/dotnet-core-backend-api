@@ -7,8 +7,6 @@ public class Exchange
     public string Fark { get; set; } = string.Empty;
     public string Alis { get; set; } = string.Empty;
     public string Satis { get; set; } = string.Empty;
-    public string GYuksek { get; set; } = string.Empty;
-    public string GDusuk { get; set; } = string.Empty;
     public string AOrt { get; set; } = string.Empty;
     public string Adet { get; set; } = string.Empty;
     public string Hacim { get; set; } = string.Empty;

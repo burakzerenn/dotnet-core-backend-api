@@ -7,7 +7,9 @@
       "launchBrowser": false,
       "applicationUrl": "http://localhost:5129",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "PUBLIC_FRONTEND_URL": "http://localhost:4173",
+        "RUN_HOST": "http://localhost:5129"
       }
     },
     "https": {
@@ -16,7 +18,9 @@
       "launchBrowser": false,
       "applicationUrl": "https://localhost:7105;http://localhost:5129",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "PUBLIC_FRONTEND_URL": "http://localhost:4173",
+        "RUN_HOST": "http://localhost:5129"
       }
     }
   }

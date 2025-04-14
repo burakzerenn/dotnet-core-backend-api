@@ -9,15 +9,24 @@ builder.Services.AddControllers();  // Add this line to register the controllers
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+var frontendUrl = Environment.GetEnvironmentVariable("PUBLIC_FRONTEND_URL");
+Console.WriteLine($"Frontend URL: {frontendUrl}");
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://20.215.232.45")
+        if (!string.IsNullOrEmpty(frontendUrl))
+        {
+            policy.WithOrigins(frontendUrl)
                   .AllowAnyMethod()
                   .AllowAnyHeader()
                   .AllowCredentials();
+        }
+        else
+        {
+            throw new InvalidOperationException("Environment variable 'PUBLIC_API_SERVER_URL' is not set or is empty.");
+        }
     });
 });
 
@@ -49,4 +58,7 @@ var summaries = new[]
 app.UseCors("AllowAll");
 app.MapControllers();
 
-app.Run("http://0.0.0.0:5000");
+var runHost = Environment.GetEnvironmentVariable("RUN_HOST");
+Console.WriteLine($"Run host: {runHost}");
+
+app.Run(runHost);
