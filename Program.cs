@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
+using DotNetEnv;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,8 @@ builder.Services.AddControllers();  // Add this line to register the controllers
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+Env.Load();
 
 var frontendUrl = Environment.GetEnvironmentVariable("PUBLIC_FRONTEND_URL");
 Console.WriteLine($"Frontend URL: {frontendUrl}");
