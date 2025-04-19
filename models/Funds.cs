@@ -10,5 +10,6 @@ public class Fund
     public string YilBasiYuzde { get; set; } = string.Empty;
     public string TedAdet { get; set; } = string.Empty;
     public string ToplamDeger { get; set; } = string.Empty;
+    public string PortfoyDegeri { get; set; } = string.Empty;
     public string Sure { get; set; } = string.Empty;
 }
