@@ -8,4 +8,5 @@ public class StocksDbContext : DbContext
 
     public DbSet<Exchange> StockDataExchanges { get; set; }
     public DbSet<Fund> StockDataFunds { get; set; }
+    public DbSet<AiData> AiData { get; set; }
 }
